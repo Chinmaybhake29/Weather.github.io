@@ -51,7 +51,12 @@ $( function() {
       "ulhasnagar",
       "manali",
       "miami",
-      "lucknow"
+      "lucknow",
+      "Goa",
+      "Bengaluru",
+      "Ahmedabad",
+      "Raipur",
+      
     ];
     $( "#tags" ).autocomplete({
       source: availableTags

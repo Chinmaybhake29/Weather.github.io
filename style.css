@@ -47,3 +47,41 @@ button {
 .weather-info {
     margin-top: 20px;
 }
+.sun {
+    position: absolute;
+    align-items: center;
+    top: 50px;
+    right: 50px;
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle, #FFD700, #FFA500);
+    border-radius: 50%;
+    animation: rotate 10s linear infinite;
+    box-shadow: 0 0 30px 10px rgba(255, 215, 0, 0.5);
+}
+
+.cloud {
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    width: 120px;
+    height: 60px;
+    background: #9a8989;
+    border-radius: 50px;
+    box-shadow: 
+        30px 0px 0px 0px #9a8989,
+        60px 0px 0px 0px #9a8989,
+        15px -20px 0px 0px #9a8989,
+        45px -20px 0px 0px #9a8989;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
